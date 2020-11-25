@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+group = "maow"
+archivesBaseName = "hndevtools"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "dom4j:dom4j:${project.dom4j_version}"
+    implementation "com.miglayout:miglayout:${project.mig_version}"
+    implementation "org.apache.commons:commons-text:${project.commons_text_version}"
+}
